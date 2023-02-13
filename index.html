@@ -18,9 +18,10 @@
   <!-- This is an example component -->
   <div class="bg-gradient-to-r from-purple-400 to-purple-600">
 
-    <nav class="border-4 border-black px-3 mb-12 bg-emerald-400">
-      <div class="container mx-auto flex flex-wrap items-center justify-between">
-        <a src="" class="flex">
+    <nav class="border-4 border-black px-3 mb-12 bg-emerald-400 shadow-[9px_10px_0px_3px_#1a202c,1px_1px_0px_4px_#1a202c]">
+      <div class="container mx-auto flex flex-wrap items-center justify-between ">
+        <img class="object-cover " src="/img/logo.jpg" alt="">
+        <a class="flex">
           <span class="self-center  text-lg font-semibold whitespace-nowrap">Julius-Web</span>
         </a>
         <div class="flex md:order-2">
@@ -72,11 +73,12 @@
         </div>
       </div>
     </nav>
+    <div class="container mx-auto flex flex-wrap items-center justify-between ">
 
     <div
       class="flex items-center justify-center min-h-min from-teal-100 via-teal-300 to-teal-500 bg-from-purple-400 to-purple-600 ">
       <div
-        class="overflow-hidden  aspect-video bg-emerald-400 cursor-pointer rounded-xl relative group border-4 border-black">
+        class="overflow-hidden  aspect-video bg-emerald-400 cursor-pointer rounded-xl relative group border-4 border-black shadow-[9px_10px_0px_3px_#1a202c,1px_1px_0px_4px_#1a202c]">
         <div
           class="rounded-xl z-50 opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out cursor-pointer absolute from-black/80 to-transparent bg-gradient-to-t inset-x-0 -bottom-2 pt-30 text-white flex items-end ">
           <div>
@@ -113,7 +115,7 @@
     class="grid w-full min-h-[50vh] text-emerald-400 bg-gradient-to-r from-purple-400 to-purple-600 place-content-center ">
 
     <section x-data="skillDisplay"
-      class="p-6 space-y-6 bg-yellow-300 rounded-xl md:grid md:grid-cols-2 md:gap-4 sm:space-y-0 border-4 border-black">
+      class="p-6 space-y-6 bg-yellow-300 rounded-xl md:grid md:grid-cols-2 md:gap-4 sm:space-y-0 border-4 border-black shadow-[9px_10px_0px_3px_#1a202c,1px_1px_0px_4px_#1a202c]">
       <div class="grid grid-cols-2 gap-6">
         <template x-for="skill in skills">
           <button x-text="skill.title"
@@ -176,20 +178,21 @@
       }));
     });
   </script>
+  </div>
 
   <!-- component -->
   <div class="bg-gradient-to-r from-purple-400 to-purple-600">
-    <div class="relative wrap overflow-hidden p-10 h-full">
-      <div class="border-4 absolute border-opacity-20 border-black h-full border" style="left: 50%"></div>
+    <div class="wrap">
+      <div class="border-4 absolute border-opacity-20 border-black h-full border " style="left: 50%"></div>
       <!-- right timeline -->
       <div class="mb-8 flex justify-between items-center w-full right-timeline">
         <div class="order-1 w-5/12"></div>
-        <div class="z-20 flex items-center order-1 bg-black shadow-xl w-8 h-8 rounded-full">
+        <div class="z-20 flex items-center order-1 bg-black shadow-xl w-8 h-8 rounded-full ">
           <h1 class="mx-auto font-semibold text-lg text-white">1</h1>
         </div>
         <div
-          class="order-1 bg-gradient-to-r from-emerald-400 to-emerald-400 rounded-lg shadow-xl w-5/12 px-6 py-4 border-4 border-black">
-          <h3 class="mb-3 font-bold text-black text-xl">Lorem Ipsum</h3>
+          class="order-1 bg-gradient-to-r from-emerald-400 to-emerald-400 rounded-lg shadow-xl w-5/12 px-6 py-4 border-4 border-black ">
+          <h3 class="mb-3 font-bold text-black text-xl ">Lorem Ipsum</h3>
           <p class="text-sm leading-snug tracking-wide text-black text-opacity-100">Lorem Ipsum is simply dummy text of
             the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since
             the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
@@ -197,14 +200,14 @@
       </div>
 
       <!-- left timeline -->
-      <div class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
-        <div class="order-1 w-5/12"></div>
-        <div class="z-20 flex items-center order-1 bg-black shadow-xl w-8 h-8 rounded-full">
-          <h1 class="mx-auto text-white font-semibold text-lg">2</h1>
+      <div class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline ">
+        <div class="order-1 w-5/12 "></div>
+        <div class="z-20 flex items-center order-1 bg-black shadow-xl w-8 h-8 rounded-full ">
+          <h1 class="mx-auto text-white font-semibold text-lg ">2</h1>
         </div>
-        <div class="order-1 bg-yellow-300 rounded-lg shadow-xl w-5/12 px-6 py-4 border-4 border-black">
-          <h3 class="mb-3 font-bold text-black text-xl">Lorem Ipsum</h3>
-          <p class="text-sm leading-snug tracking-wide text-black text-opacity-100">Lorem Ipsum is simply dummy text of
+        <div class="order-1 bg-yellow-300 rounded-lg shadow-xl w-5/12 px-6 py-4 border-4 border-black ">
+          <h3 class="mb-3 font-bold text-black text-xl ">Lorem Ipsum</h3>
+          <p class="text-sm leading-snug tracking-wide text-black text-opacity-100 ">Lorem Ipsum is simply dummy text of
             the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since
             the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
         </div>
