@@ -28,7 +28,7 @@
           <div class="relative mr-3 md:mr-0 hidden md:block">
           </div>
           <button data-collapse-toggle="mobile-menu-3" type="button"
-            class="md:hidden text-dark-400 hover:text-dark-900 focus:outline-none focus:ring-2 focus:ring-dark-300 rounded-lg inline-flex items-center justify-center border-2 border-black"
+            class="md:hidden text-dark-400 hover:text-dark-900 focus:outline-none focus:ring-2 focus:ring-dark-300 rounded-lg inline-flex items-center justify-center  shadow-[1px_1px_0px_2px_#1a202c] rounded text-lg"
             aria-controls="mobile-menu-3" aria-expanded="false">
             <span class="sr-only">Open main menu</span>
             <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
@@ -47,16 +47,16 @@
           <ul class="flex-col md:flex-row flex md:space-x-8 mt-4 md:mt-0 md:text-sm md:font-medium ">
             <li>
               <a href="#"
-                class="m-3 bg-gradient-to-r from-yellow-300 to-yellow-300 md:bg-transparent text-dark-500 border-b  border-black block pl-3 pr-4 py-2 md:text-black-700 md:p-0 rounded text-lg"
+                class="m-3 bg-gradient-to-r from-yellow-300 to-yellow-300 md:bg-transparent text-dark-500 border-b  border-black block pl- pr-4 py-2 md:text-black-700 md:p-2 shadow-[1px_1px_0px_2px_#1a202c] rounded text-lg font-semibold"
                 aria-current="page">Home</a>
             </li>
             <li>
               <a href="#"
-                class="m-3 text-dark-700 hover:bg-gradient-to-r from-yellow-300 to-yellow-300 border-b  border-black md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-dark-700 md:p-0 text-lg">About</a>
+                class="m-3 text-dark-700 hover:bg-gradient-to-r from-yellow-300 to-yellow-300 border-black md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-dark-900 md:p-2 md:hover:shadow-[1px_1px_0px_2px_#1a202c] rounded text-lg font-semibold">About</a>
             </li>
             <li>
               <a href="#"
-                class="m-3 text-dark-700 hover:bg-gradient-to-r from-yellow-300 to-yellow-300 border-b  border-black md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-dark-900 md:p-0 text-lg">Contact</a>
+                class="m-3 text-dark-700 hover:bg-gradient-to-r from-yellow-300 to-yellow-300 border-black md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-dark-900 md:p-2 md:hover:shadow-[1px_1px_0px_2px_#1a202c] rounded text-lg font-semibold">Contact</a>
             </li>
           </ul>
         </div>
@@ -102,14 +102,14 @@
 
       
         <div
-          class="m-4 grid w-full  text-emerald-400 bg-gradient-to-r from-purple-400 to-purple-600 place-content-center ">
+          class="m-8 grid w-full  text-emerald-400 bg-gradient-to-r from-purple-400 to-purple-600 place-content-center ">
 
           <section x-data="skillDisplay"
-            class="p-6 space-y-6 bg-yellow-300 rounded-xl md:grid md:grid-cols-2 md:gap-4 sm:space-y-0 border-4 border-black shadow-[9px_10px_0px_3px_#1a202c,1px_1px_0px_4px_#1a202c]">
+            class="mr-4 p-6 space-y-6 bg-yellow-300 rounded-xl md:grid md:grid-cols-2 md:gap-4 sm:space-y-0 border-4 border-black shadow-[9px_10px_0px_3px_#1a202c,1px_1px_0px_4px_#1a202c]">
             <div class="grid grid-cols-2 gap-6">
               <template x-for="skill in skills">
                 <button x-text="skill.title"
-                  class="px-4 py-2 text-xl text-black  bg-emerald-400 rounded-md h-12 w-36 hover:bg-emerald-500 border- border-black"
+                  class="px-4 py-2 text-xl text-black  bg-emerald-400 rounded-md h-12 w-36 hover:bg-emerald-500 shadow-[1px_1px_0px_2px_#1a202c] rounded"
                   :class="(currentSkill.title == skill.title) && 'font-bold ring-2 ring-black-100'"
                   @click="currentSkill = skill"></button>
               </template>
@@ -175,31 +175,31 @@
     <!-- component -->
     <div class="bg-gradient-to-r from-purple-400 to-purple-600">
       <div class="wrap m-4">
-        <div class="border-4 absolute border-opacity-20 border-black h-full border " style="left: 50%"></div>
+        <div class="border-4 absolute border-opacity-100 border-black h-full border " style="right: 80%"></div>
         <!-- right timeline -->
         <div class="mb-8 flex justify-between items-center w-full right-timeline">
-          <div class="order-1 w-5/12"></div>
-          <div class="z-20 flex items-center order-1 bg-black shadow-xl w-8 h-8 rounded-full ">
+          <div class="order-1 w-5/12" ></div>
+          <div class="mr-2 z-20 flex items-left order-1 bg-black shadow-xl w-8 h-8 rounded-full ">
             <h1 class="mx-auto font-semibold text-lg text-white">1</h1>
           </div>
-          <div
-            class="order-1 bg-gradient-to-r from-emerald-400 to-emerald-400 rounded-lg shadow-xl w-5/12 px-6 py-4 border-4 border-black ">
-            <h3 class="mb-3 font-bold text-black text-xl ">Lorem Ipsum</h3>
-            <p class="text-sm leading-snug tracking-wide text-black text-opacity-100">Lorem Ipsum is simply dummy text
-              of
-              the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since
-              the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-            </p>
+          <div class="order-1 bg-gradient-to-r from-emerald-400 to-emerald-400 rounded-lg shadow-xl w-9/12 px-6 py-10 border-4 border-black">
+            <h3 class="mb-3 font-bold text-black text-xl">Lorem Ipsum</h3>
+            <p class="text-sm font-medium leading-snug tracking-wide text-black text-opacity-100">Lorem Ipsum is simply
+              dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
+              text
+              ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+              specimen
+              book.</p>
           </div>
         </div>
 
         <!-- left timeline -->
-        <div class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline ">
+        <div class="mb-8 flex justify-between items-center w-full right-timeline ">
           <div class="order-1 w-5/12 "></div>
           <div class="z-20 flex items-center order-1 bg-black shadow-xl w-8 h-8 rounded-full ">
             <h1 class="mx-auto text-white font-semibold text-lg ">2</h1>
           </div>
-          <div class="order-1 bg-yellow-300 rounded-lg shadow-xl w-5/12 px-6 py-4 border-4 border-black ">
+          <div class="order-1 bg-yellow-300 rounded-lg shadow-xl w-7/12 px-6 py-10 border-4 border-black ">
             <h3 class="mb-3 font-bold text-black text-xl ">Lorem Ipsum</h3>
             <p class="text-sm leading-snug tracking-wide text-black text-opacity-100 ">Lorem Ipsum is simply dummy text
               of
@@ -210,29 +210,29 @@
         </div>
 
         <!-- right timeline -->
-        <div class="mb-8 flex justify-between items-center w-full right-timeline ">
-          <div class="order-1 w-5/12 "></div>
-          <div class="z-20 flex items-center order-1 bg-black shadow-xl w-8 h-8 rounded-full">
-            <h1 class="mx-auto font-semibold text-lg text-white">3</h1>
+        <div class="mb-8 flex justify-between items-center w-full right-timeline">
+          <div class="order-1 w-5/12" ></div>
+          <div class="z-20 flex items-center order-1 bg-black shadow-xl w-8 h-8 rounded-full ">
+            <h1 class="mx-auto font-semibold text-lg text-white">1</h1>
           </div>
-          <div
-            class="order-1 bg-gradient-to-r from-emerald-400 to-emerald-400 rounded-lg shadow-xl w-5/12 px-6 py-4 border-4 border-black">
+          <div class="order-1 bg-gradient-to-r from-emerald-400 to-emerald-400 rounded-lg shadow-xl w-9/12 px-6 py-10 border-4 border-black">
             <h3 class="mb-3 font-bold text-black text-xl">Lorem Ipsum</h3>
-            <p class="text-sm leading-snug tracking-wide text-black text-opacity-100">Lorem Ipsum is simply dummy text
-              of
-              the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since
-              the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-            </p>
+            <p class="text-sm font-medium leading-snug tracking-wide text-black text-opacity-100">Lorem Ipsum is simply
+              dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
+              text
+              ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+              specimen
+              book.</p>
           </div>
         </div>
 
         <!-- left timeline -->
-        <div class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
+        <div class="mb-8 flex justify-between items-center w-full right-timeline">
           <div class="order-1 w-5/12"></div>
           <div class="z-20 flex items-center order-1 bg-black shadow-xl w-8 h-8 rounded-full">
             <h1 class="mx-auto text-white font-semibold text-lg">4</h1>
           </div>
-          <div class="order-1 bg-yellow-300 rounded-lg shadow-xl w-5/12 px-6 py-4 border-4 border-black">
+          <div class="order-1 bg-yellow-300 rounded-lg shadow-xl w-7/12 px-6 py-10 border-4 border-black">
             <h3 class="mb-3 font-bold text-black text-xl">Lorem Ipsum</h3>
             <p class="text-sm font-medium leading-snug tracking-wide text-black text-opacity-100">Lorem Ipsum is simply
               dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
